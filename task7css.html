@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: maroon;
+            padding: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .registration-box {
+            color: #fff;
+            text-align: center;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .input-field {
+            width: 48%;
+            /* Adjust the width to fit your design */
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-field input[type="text"],
+        .input-field input[type="email"],
+        .input-field input[type="password"],
+        .input-field input[type="tel"],
+        .input-field select,
+        .input-field textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #777;
+            border-radius: 5px;
+        }
+
+        .gender-options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+
+        .button-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register-button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .select-language {
+            background-color: #ccc;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="registration-box">
+            <h2>Registration Form</h2>
+            <form action="">
+                <tr>
+                    <div class="input-field"></div>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" placeholder="Your Name" /></td>
+                </tr>
+                <tr>
+                    <div class="input-field"></div>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" placeholder="Your Email" /></td>
+                </tr>
+                <tr>
+                    <div class="input-field"></div>
+                    <td><label for="password">password:</label></td>
+                    <td><input type="password" id="password" placeholder="Password" /></td>
+                </tr>
+                <tr>
+                    <div class="input-field"></div>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" placeholder="Phone Number" /></td>
+                </tr>
+                <tr>
+                    <div class="input-field">
+                    <td><label for="gender">Gender:</label></td>
+                    <div class="gender-options">
+                        <label for="male">Male:</label>
+                        <input type="radio" id="male" name="gender" />
+                        <label for="female">Female:</label>
+                        <input type="radio" id="female" name="gender" />
+                        <label for="other">Other:</label>
+                        <input type="radio" id="other" name="gender" />
+                    </div>
+                </tr>
+                <div class="input-field">
+                    <label for="language">Language:</label>
+                    <select id="language">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" placeholder="Zip Code">
+                </div>
+                <div class="input-field">
+                    <label for="about">About:</label>
+                    <textarea id="about" rows="4" placeholder="Write about yourself"></textarea>
+                </div>
+                <div class="button-container">
+                    <button class="register-button">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
